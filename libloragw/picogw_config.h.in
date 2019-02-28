@@ -1,0 +1,12 @@
+#ifndef _LORAGW_CONFIGURATION_H
+#define _LORAGW_CONFIGURATION_H
+
+#define LIBLORAGW_VERSION "@picogw_hal_VERSION_SHORT@"
+
+#cmakedefine01 DEBUG_AUX
+#cmakedefine01 DEBUG_COM
+#cmakedefine01 DEBUG_REG
+#cmakedefine01 DEBUG_MCU
+#cmakedefine01 DEBUG_HAL
+
+#endif
