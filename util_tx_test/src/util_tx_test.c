@@ -46,7 +46,7 @@ License: Revised BSD License, see LICENSE.TXT file include in the project
 /* -------------------------------------------------------------------------- */
 /* --- PRIVATE CONSTANTS ---------------------------------------------------- */
 
-#define COM_PATH_DEFAULT            "/dev/ttyACM0"
+#define COM_PATH_DEFAULT            "/dev/ttyLORA"
 #define TX_RF_CHAIN                 0 /* TX only supported on radio A */
 #define DEFAULT_RSSI_OFFSET         0.0
 #define DEFAULT_MODULATION          "LORA"

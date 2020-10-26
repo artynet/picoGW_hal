@@ -105,7 +105,7 @@ int set_interface_attribs_linux(int fd, int speed) {
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-/* configure TTYACM0 read blocking or not*/
+/* configure TTYLORA read blocking or not*/
 int set_blocking_linux(int fd, bool blocking) {
     struct termios tty;
 

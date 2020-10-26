@@ -58,7 +58,7 @@ License: Revised BSD License, see LICENSE.TXT file include in the project
 #define DEFAULT_FDEV_KHZ        25
 #define DEFAULT_BT              2
 
-#define COM_PATH_DEFAULT        "/dev/ttyACM0"
+#define COM_PATH_DEFAULT        "/dev/ttyLORA"
 
 /* -------------------------------------------------------------------------- */
 /* --- GLOBAL VARIABLES ----------------------------------------------------- */

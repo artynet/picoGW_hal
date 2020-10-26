@@ -42,7 +42,7 @@ License: Revised BSD License, see LICENSE.TXT file include in the project
 /* -------------------------------------------------------------------------- */
 /* --- PRIVATE CONSTANTS ---------------------------------------------------- */
 
-#define COM_PATH_DEFAULT        "/dev/ttyACM0"
+#define COM_PATH_DEFAULT        "/dev/ttyLORA"
 #define VERS                    103
 #define READS_WHEN_ERROR        16 /* number of times a read is repeated if there is a read error */
 #define BUFF_SIZE               1024 /* maximum number of bytes that we can write in sx1301 RX data buffer */

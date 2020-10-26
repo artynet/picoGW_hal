@@ -24,7 +24,7 @@ License: Revised BSD License, see LICENSE.TXT file include in the project
 /* -------------------------------------------------------------------------- */
 /* --- PRIVATE CONSTANTS ---------------------------------------------------- */
 
-#define COM_PATH_DEFAULT    "/dev/ttyACM0"
+#define COM_PATH_DEFAULT    "/dev/ttyLORA"
 #define BURST_TEST_LENGTH    8192
 
 /* -------------------------------------------------------------------------- */
