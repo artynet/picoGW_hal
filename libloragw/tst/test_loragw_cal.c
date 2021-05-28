@@ -45,7 +45,7 @@ License: Revised BSD License, see LICENSE.TXT file include in the project
 /* -------------------------------------------------------------------------- */
 /* --- PRIVATE CONSTANTS ---------------------------------------------------- */
 
-#define COM_PATH_DEFAULT        "/dev/ttyACM0"
+#define COM_PATH_DEFAULT        "/dev/ttyLORA"
 #define DEFAULT_RSSI_OFFSET     0.0
 #define NB_CAL_MAX              100
 #define MCU_AGC                 1

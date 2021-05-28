@@ -39,7 +39,7 @@ License: Revised BSD License, see LICENSE.TXT file include in the project
 /* -------------------------------------------------------------------------- */
 /* --- PRIVATE CONSTANTS ---------------------------------------------------- */
 
-#define COM_PATH_DEFAULT "/dev/ttyACM0"
+#define COM_PATH_DEFAULT "/dev/ttyLORA"
 
 /* -------------------------------------------------------------------------- */
 /* --- PRIVATE VARIABLES (GLOBAL) ------------------------------------------- */
