@@ -1,0 +1,328 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: picogw
+Source: <url://example.com>
+#
+# Please double check copyright with the licensecheck(1) command.
+
+Files:     .gitignore
+           CMakeLists.txt
+           Makefile
+           VERSION
+           cmake-build.patch
+           cmake/picogw-config.cmake
+           libloragw/CMakeLists.txt
+           libloragw/Makefile
+           libloragw/library.cfg
+           libloragw/picogw.pc.in
+           libloragw/picogw_config.h.in
+           lora_indent.sh
+           util_boot/CMakeLists.txt
+           util_boot/Makefile
+           util_chip_id/CMakeLists.txt
+           util_chip_id/Makefile
+           util_com_stress/CMakeLists.txt
+           util_com_stress/Makefile
+           util_pkt_logger/CMakeLists.txt
+           util_pkt_logger/Makefile
+           util_pkt_logger/global_conf.json
+           util_pkt_logger/local_conf.json
+           util_tx_continuous/CMakeLists.txt
+           util_tx_continuous/Makefile
+           util_tx_test/CMakeLists.txt
+           util_tx_test/Makefile
+Copyright: __NO_COPYRIGHT_NOR_LICENSE__
+License:   __NO_COPYRIGHT_NOR_LICENSE__
+
+Files:     libloragw/tst/test_loragw_cal.c
+           libloragw/tst/test_loragw_hal.c
+           libloragw/tst/test_loragw_reg.c
+Copyright: 2017 Semtech-Cycleo
+License:   __UNKNOWN__
+ Description:
+
+Files:     util_pkt_logger/inc/parson.h
+           util_pkt_logger/src/parson.c
+Copyright: 2012-2016 Krzysztof Gabis
+License:   Expat
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ THE SOFTWARE.
+
+Files:     libloragw/inc/loragw_reg.h
+           libloragw/src/loragw_reg.c
+Copyright: 2017 Semtech-Cycleo
+License:   __UNKNOWN__
+ Description:
+ Functions used to handle a single LoRa concentrator.
+ Registers are addressed by name.
+ Multi-bytes registers are handled automatically.
+ Read-modify-write is handled automatically.
+ .
+ License: Revised BSD License, see LICENSE.TXT file include in the project
+
+Files:     libloragw/inc/loragw_hal.h
+           libloragw/src/loragw_hal.c
+Copyright: 2017 Semtech-Cycleo
+License:   __UNKNOWN__
+ Description:
+ LoRa concentrator Hardware Abstraction Layer
+ .
+ License: Revised BSD License, see LICENSE.TXT file include in the project
+
+Files:     libloragw/inc/loragw_com.h
+           libloragw/src/loragw_com.c
+Copyright: 2017 Semtech-Cycleo
+License:   __UNKNOWN__
+ Description:
+ A communication bridge layer to abstract linux/windows OS or others.
+ The current project support only linux os
+ .
+ License: Revised BSD License, see LICENSE.TXT file include in the project
+
+Files:     libloragw/inc/loragw_mcu.h
+           libloragw/src/loragw_mcu.c
+Copyright: 2017 Semtech-Cycleo
+License:   __UNKNOWN__
+ Description:
+ Wrapper to call MCU's HAL functions
+ .
+ License: Revised BSD License, see LICENSE.TXT file include in the project
+
+Files:     libloragw/inc/loragw_radio.h
+           libloragw/src/loragw_radio.c
+Copyright: 2017 Semtech-Cycleo
+License:   __UNKNOWN__
+ Description:
+ Functions used to handle LoRa concentrator radios.
+ .
+ License: Revised BSD License, see LICENSE.TXT file include in the project
+
+Files:     util_boot/readme.md
+           util_chip_id/readme.md
+Copyright: 2014 Semtech-Cycleo
+License:   __NO_LICENSE__
+
+Files:     util_boot/src/util_boot.c
+Copyright: 2017 Semtech-Cycleo
+License:   __UNKNOWN__
+ Description:
+ Utility to jump to the PicoCell MCU bootloader
+ .
+ License: Revised BSD License, see LICENSE.TXT file include in the project
+
+Files:     libloragw/src/loragw_com_linux.c
+Copyright: 2017 Semtech-Cycleo
+License:   __UNKNOWN__
+ Description:
+ this file contains the USB commands to configure and communicate with the SX1308
+ LoRA concentrator.
+ A USB CDC drivers is required to establish the connection with the PicoCell
+ board.
+ .
+ License: Revised BSD License, see LICENSE.TXT file include in the project
+
+Files:     util_pkt_logger/src/util_pkt_logger.c
+Copyright: 2013 Semtech-Cycleo
+License:   __UNKNOWN__
+ Description:
+ Configure LoRa concentrator and record received packets in a log file
+ .
+ License: Revised BSD License, see LICENSE.TXT file include in the project
+
+Files:     libloragw/src/arb_fw.var
+Copyright: 2017 Semtech-Cycleo
+License:   __UNKNOWN__
+ Description:
+ Arbiter firmware
+ .
+ License: Revised BSD License, see LICENSE.TXT file include in the project
+
+Files:     libloragw/inc/loragw_aux.h
+Copyright: 2017 Semtech-Cycleo
+License:   __UNKNOWN__
+ Description:
+ LoRa concentrator HAL common auxiliary functions
+ .
+ License: Revised BSD License, see LICENSE.TXT file include in the project
+
+Files:     util_com_stress/readme.md
+Copyright: 2013 Semtech-Cycleo
+License:   __UNKNOWN__
+ LoRa concentrator SPI stress test
+
+Files:     readme.md
+Copyright: 2013 Semtech-Cycleo
+License:   __UNKNOWN__
+ LoRa Gateway project
+
+Files:     util_tx_test/src/util_tx_test.c
+Copyright: 2013 Semtech-Cycleo
+License:   __UNKNOWN__
+ Description:
+ Send a bunch of packets on a settable frequency
+ .
+ License: Revised BSD License, see LICENSE.TXT file include in the project
+
+Files:     util_com_stress/src/util_com_stress.c
+Copyright: 2017 Semtech-Cycleo
+License:   __UNKNOWN__
+ Description:
+ USB stress test
+ .
+ License: Revised BSD License, see LICENSE.TXT file include in the project
+
+Files:     util_tx_continuous/readme.md
+Copyright: 2014 Semtech-Cycleo
+License:   __UNKNOWN__
+ Tx continuous program for LoRa concentrator
+
+Files:     util_tx_test/readme.md
+Copyright: 2013 Semtech-Cycleo
+License:   __UNKNOWN__
+ LoRa concentrator packet sender
+
+Files:     libloragw/readme.md
+Copyright: 2013 Semtech-Cycleo
+License:   __UNKNOWN__
+ LoRa concentrator HAL user manual
+
+Files:     libloragw/inc/loragw_sx125x.h
+Copyright: 2017 Semtech
+License:   __UNKNOWN__
+ Description: SX125x radio registers and constant definitions
+ .
+ License: Revised BSD License, see LICENSE.TXT file include in the project
+
+Files:     libloragw/src/loragw_aux.c
+Copyright: 2017 Semtech-Cycleo
+License:   __UNKNOWN__
+ Description:
+ LoRa concentrator HAL auxiliary functions
+ .
+ License: Revised BSD License, see LICENSE.TXT file include in the project
+
+Files:     util_tx_continuous/src/util_tx_continuous.c
+Copyright: 2014 Semtech-Cycleo
+License:   __UNKNOWN__
+ Description:
+ SX1301 tx continuous utility
+ .
+ License: Revised BSD License, see LICENSE.TXT file include in the project
+
+Files:     libloragw/src/cal_fw5-12.var
+Copyright: 2017 Semtech-Cycleo
+License:   __UNKNOWN__
+ Description:
+ AGC firmware
+ .
+ License: Revised BSD License, see LICENSE.TXT file include in the project
+
+Files:     libloragw/src/cal_fw.var
+Copyright: 2017 Semtech-Cycleo
+License:   __UNKNOWN__
+ Description:
+ Calibration firmware
+ .
+ License: Revised BSD License, see LICENSE.TXT file include in the project
+
+Files:     libloragw/src/agc_fw.var
+Copyright: 2013 Semtech-Cycleo
+License:   __UNKNOWN__
+ Description:
+ AGC firmware
+ .
+ License: Revised BSD License, see LICENSE.TXT file include in the project
+ Maintainer: Matthieu Leurent
+
+Files:     libloragw/inc/loragw_com_linux.h
+Copyright: 2017 Semtech-Cycleo
+License:   __UNKNOWN__
+ Description:
+ this file contains the USB cmd to configure and communicate with
+ the Sx1308 LoRA concentrator.
+ An USB CDC drivers is required to establish the connection with the picogateway board.
+ .
+ License: Revised BSD License, see LICENSE.TXT file include in the project
+
+Files:     util_pkt_logger/readme.md
+Copyright: 2013 Semtech-Cycleo
+License:   __UNKNOWN__
+ LoRa packet logger
+
+Files:     util_chip_id/src/util_chip_id.c
+Copyright: 2013 Semtech-Cycleo
+License:   __UNKNOWN__
+ Description:
+ Get unique ID of the PicoCell gateway board
+ .
+ License: Revised BSD License, see LICENSE.TXT file include in the project
+
+#----------------------------------------------------------------------------
+# Files marked as NO_LICENSE_TEXT_FOUND may be covered by the following
+# license/copyright files.
+
+#----------------------------------------------------------------------------
+# License file: LICENSE
+ Copyright (c) 2013, SEMTECH S.A.
+ All rights reserved.
+ .
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ 	* Redistributions of source code must retain the above copyright
+ 	  notice, this list of conditions and the following disclaimer.
+ 	* Redistributions in binary form must reproduce the above copyright
+ 	  notice, this list of conditions and the following disclaimer in the
+ 	  documentation and/or other materials provided with the distribution.
+ 	* Neither the name of the Semtech corporation nor the
+ 	  names of its contributors may be used to endorse or promote products
+ 	  derived from this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL SEMTECH S.A. BE LIABLE FOR ANY
+ DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ .
+ --- For the parson library used by the packet logger ---
+ .
+ Parson ( http://kgabis.github.com/parson/ )
+ Copyright (c) 2012 Krzysztof Gabis
+ .
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ ITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ THE SOFTWARE.
+ .

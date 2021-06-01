@@ -74,4 +74,4 @@ add_subdirectory(util_com_stress)
 add_subdirectory(util_tx_continuous)
 
 # -- add util_tx_test
-add_subdirectory(util_tx_test)
+# add_subdirectory(util_tx_test)
